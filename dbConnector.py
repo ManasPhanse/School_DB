@@ -4,9 +4,9 @@ from contextlib import contextmanager
 @contextmanager
 def get_db_connection():
     connection = mysql.connector.connect(
-        host='localhost',  # e.g., 'localhost'
+        host='localhost <or any other server>',
         user='root',
-        password='ManasPhanse22',
+        password='<your password>',
         database='school'
     )
     try:
